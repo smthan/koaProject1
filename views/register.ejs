@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="shortcut icon" href="favicon.ico" />  -->
+    <title>Document</title>
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="vue/dist/vue.min.js"></script>
+    <script src="axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+    <body>       
+        <div class="formbox" id="vueapp">
+            <form onsubmit="return false">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email" v-model='email'>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputEmail1">name</label>
+                  <input type="text" class="form-control" id="nameinput" placeholder="name" v-model='name'>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" v-model='password'>
+                </div>                
+                <button type="submit" class="btn btn-danger" id="register" @click='doPost()'>注册</button>
+              </form>
+              {{ msg + ' ' + email + ' ' + name + ' ' + password }}
+              
+              {{mdb.length}}
+              <button @click='doGetMdb()'>获取数据</button>
+              <button @click='doGetDb()'>获取数据</button>
+              <table v-show="mdb.length>0" class="table table-striped table-hover table-bordered">
+                  <thead>
+                      <tr>
+                          <th>材质</th>
+                          <th>名称</th>
+                          <th>类型</th>
+                          <th>备注</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr v-for="item in mdb">
+                          <td>{{item.MATERIAL_NAME}}</td>
+                          <td>{{item.MODEL_NAME}}</td>
+                          <td>{{item.MODEL_TYPE}}</td>
+                          <td>{{item.NOTE}}</td>
+                       </tr>
+                  </tbody>
+              </table>
+              
+        </div>
+        <script>
+            var app = new Vue({
+                el:'#vueapp',
+                data:{
+                    msg:'Hello Wue!',
+                    email:'',
+                    name:'',
+                    password:'',
+                    mdb:[]
+                },
+                methods: {
+                    mounted:function(){
+                        console.log('hello');
+                    },
+                    doPost:function(){  // 使用 axios 发送 post 请求
+                        console.log('do post');
+                        axios.post('/register',{
+                            name:this.name,
+                            email:this.email,
+                            password:this.password
+                        }).then(data=>{
+                            console.log(data.data);
+                            this.msg = JSON.stringify(data.data);  // string -> json JSON.parse() | json -> string JSON.stringify()
+                        }).catch(err=>{
+                            console.log(err);
+                        });
+                    },
+                    doGetMdb:function(){
+                        axios.post('/getMdb').then(data=>{
+                            this.mdb = data.data;
+                        }).catch(err=>{
+                            console.log(err);
+                        });
+                    },
+                    doGetDb:function(){
+                        axios.post('/api/list').then(data=>{
+                            console.log(data.data);
+                        }).catch(err=>{
+                            console.log(err);
+                        });
+                    },
+                },
+            });
+        </script>
+    </body>
+</html>

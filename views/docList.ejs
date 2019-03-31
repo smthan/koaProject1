@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/vue/dist/vue.min.js"></script>
+    <script src="/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css"/>
+</head>
+<body>
+    <div id="vueapp" class="container"> 
+        <table v-show="docs.length>0" class="table table-striped table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th width="80">作者</th>
+                    <th width="80">图像</th>
+                    <th>名称</th>
+                    <th width="80">置顶</th>
+                    <th width="80">访问数</th>
+                    <th width="80">回帖数</th>
+                    <th width="80">详情</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr v-for="doc in docs">
+                    <td>{{doc.author_name}}</td>
+                    <td> <img :src="doc.author_avatar_url" style="height:50px;"></td>
+                    <td>{{doc.title}}</td>
+                    <td>{{doc.top}}</td>
+                    <td>{{doc.visit_count}}</td>
+                    <td>{{doc.reply_count}}</td>
+                    <td><a :href="'/doc/'+ doc.id" target="blank">详情</a></td><!-- {{doc.id}} -->
+                </tr>
+            </tbody>
+        </table>    
+        <button type="button" class="btn btn-large btn-block btn-success" @click="getList()">加载更多...</button>
+    </div>
+    
+    <script>
+     var app = new Vue({
+        el:'#vueapp',
+        data:{
+            msg:'Hello Wue!',
+            page:1,
+            docs:[]
+        },
+        mounted: function (){            
+            (async ()=>{
+                console.log("mounted begin ...");
+                await axios.post('/api/list',{page:this.page}).then(data=>{
+                    console.log(data.data);
+                     this.docs = data.data;
+                }).catch(err=>{
+                    console.log(err);
+                });
+                console.log("mounted end ...");
+            })();            
+        },
+        methods: {
+            getList:function(){
+                this.page +=1;
+                (async ()=>{
+                    console.log("getList begin ...");
+                    await axios.post('/api/list',{page:this.page}).then(data=>{
+                        console.log(data.data);
+                        this.docs = this.docs.concat(data.data);
+                    }).catch(err=>{
+                        console.log(err);
+                    });
+                    console.log("getList end ...");
+                })();     
+                window.scrollTo(0, document.documentElement.clientHeight);
+            },
+        }
+    });
+    </script>
+</body>
+</html>

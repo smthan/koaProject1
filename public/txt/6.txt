@@ -1,0 +1,7 @@
+  --> POST /api/list 200 317ms 2.33kb
+  <-- GET /doc/5c9600c800bcfd7eb2be5484
+  --> GET /doc/5c9600c800bcfd7eb2be5484 200 473ms 1.66kb
+  <-- GET /jquery/dist/jquery.min.js
+  <-- GET /bootstrap/dist/css/bootstrap.min.css
+  --> GET /jquery/dist/jquery.min.js 200 16ms 84.89kb
+  --> GET /bootstrap/dist/css/bootstrap.min.css 200 46ms 152.11kb

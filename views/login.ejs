@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="shortcut icon" href="favicon.ico" />  -->
+    <title><%= title %></title>
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css"/>
+    <script src="jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+    <body>
+        <div class="h2box">
+           <h2><%= title%></h2>  <!-- 使用 ejs 模板 从后台传入参数 -->
+        </div>
+        
+        <div class="formbox">
+            <form onsubmit="return false">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>                
+                <button type="submit" class="btn btn-success" id="login">login</button>
+              </form>              
+        </div>        
+        <script>
+            $("#login").on('click', function () {
+                var email = $("#exampleInputEmail1").val()
+                var password = $("#exampleInputPassword1").val()
+                var data = {
+                  "email": email,
+                  "password": password
+                }
+                $.ajax({
+                  url: '/login',
+                  method:'post',
+                  data: data,
+                  success: function (res) { console.log(res) },
+                  error: function(err) { console.log(err) }
+                })
+            })
+        </script>
+    </body>
+</body>
+</html>
