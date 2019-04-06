@@ -1,5 +1,7 @@
 // apiRouter.js
 const Router = require('koa-router');
+const bomRouter = require('./routers/bomRouter')
+const docApi = require('./../utils/docHelper');
 
 const router = new Router();
 
@@ -22,9 +24,6 @@ router.post('/post2',async ctx=>{
     ctx.throw(new Error("aasdfasdfasdfasdf"));
 });
 
-
-const docApi = require('./docHelper');
-
 router.post('/list',async ctx=>{ 
     var page = ctx.request.body.page;   
     await docApi.getList(page.toString(),d=>{
@@ -37,5 +36,23 @@ router.post('/doc/:id',async ctx=>{
         ctx.body = d;              
     })
 });
+
+/*
+var apiBomCtrl = require('./../utils/bomHelper');
+var uploadOption = require('./../utils/multerHelper')
+
+router.get('/bom/del/:id', apiBomCtrl.deletebyId);
+
+router.get('/bom/download', apiBomCtrl.download);
+
+router.post('/bom/add', apiBomCtrl.add);
+
+router.post('/bom/addFile', uploadOption.single('file'), apiBomCtrl.addFile);
+
+router.get('/bom/list', apiBomCtrl.getList);
+*/
+
+//  使用 嵌套 路由 模式
+router.use('/bom', bomRouter.routes()); 
 
 module.exports = router;

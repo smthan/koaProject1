@@ -1,0 +1,45 @@
+td{
+    vertical-align: middle!important ;
+}
+
+.bmptd{
+    padding:0 10px!important ;
+    text-align: center!important ;
+}
+
+.bmpimg{
+    height:60px;
+    margin: 0 auto;
+}
+
+.table-striped tbody tr:nth-of-type(2n+1) {
+
+    background-color: rgba(0,0,0,.02);
+
+}
+
+.control-label
+{
+    padding-top: 3px!important;
+}
+
+.form-group{
+    margin: 0px 0 10px 0!important;
+}
+
+.formTitle{
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 28px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+input{
+    padding: 1px!important;
+    width: 50%!important;
+}

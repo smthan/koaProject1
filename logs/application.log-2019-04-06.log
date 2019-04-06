@@ -1,0 +1,137 @@
+[2019-04-06T14:29:25.382] [ERROR] application - dadad
+[2019-04-06T14:30:07.801] [ERROR] application - ### error message:
+数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback... 
+### error stack:
+Error: 数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback...
+    at callBack (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:21:11)
+    at bom.save (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:72:29)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:4598:16
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\utils.js:263:16
+    at model.$__save.error (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:471:7)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:315:21
+    at next (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:209:27)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:182:9
+    at process.nextTick (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:499:38)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-06T14:30:48.325] [ERROR] application - ### error message:
+数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback... 
+### error stack:
+Error: 数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback...
+    at callBack (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:21:11)
+    at bom.save (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:72:29)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:4598:16
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\utils.js:263:16
+    at model.$__save.error (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:471:7)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:315:21
+    at next (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:209:27)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:182:9
+    at process.nextTick (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:499:38)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-06T14:36:35.396] [ERROR] application - ### error message:
+数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback... 
+### error stack:
+Error: 数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback...
+    at callBack (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:21:11)
+    at bom.save (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:72:29)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:4598:16
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\utils.js:263:16
+    at model.$__save.error (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:471:7)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:315:21
+    at next (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:209:27)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:182:9
+    at process.nextTick (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:499:38)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-06T14:38:42.301] [ERROR] application - ### error message:
+数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback... 
+### error stack:
+Error: 数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback...
+    at callBack (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:21:11)
+    at bom.save (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:72:29)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:4598:16
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\utils.js:263:16
+    at model.$__save.error (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:471:7)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:315:21
+    at next (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:209:27)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:182:9
+    at process.nextTick (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:499:38)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-06T14:40:49.217] [ERROR] application - {"code":0,"message":"数据库保存数据失败：\nbom.save 回调函数中 出现异常 ：\n普通函数抛出的异常： callback...","url":"/api/bom/add","stack":"Error: 数据库保存数据失败：\nbom.save 回调函数中 出现异常 ：\n普通函数抛出的异常： callback...\n    at callBack (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\utils\\bomHelper.js:21:11)\n    at bom.save (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\utils\\bomHelper.js:72:29)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\model.js:4598:16\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\utils.js:263:16\n    at model.$__save.error (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\model.js:471:7)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:315:21\n    at next (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:209:27)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:182:9\n    at process.nextTick (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:499:38)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","error":{"expose":false,"statusCode":500,"status":500},"response":{"status":500,"message":"Internal Server Error","header":{}}}
+[2019-04-06T14:42:16.763] [ERROR] application - {"code":0,"message":"数据库保存数据失败：\nbom.save 回调函数中 出现异常 ：\n普通函数抛出的异常： callback...","url":"/api/bom/add","stack":"Error: 数据库保存数据失败：\nbom.save 回调函数中 出现异常 ：\n普通函数抛出的异常： callback...\n    at callBack (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\utils\\bomHelper.js:21:11)\n    at bom.save (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\utils\\bomHelper.js:72:29)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\model.js:4598:16\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\utils.js:263:16\n    at model.$__save.error (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_mongoose@5.4.22@mongoose\\lib\\model.js:471:7)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:315:21\n    at next (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:209:27)\n    at C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:182:9\n    at process.nextTick (C:\\Users\\Administrator\\Desktop\\Vue\\koaTest\\node_modules\\_kareem@2.3.0@kareem\\index.js:499:38)\n    at process._tickCallback (internal/process/next_tick.js:61:11)","error":{"expose":false,"statusCode":500,"status":500},"response":{"status":500,"message":"Internal Server Error","header":{}}}
+[2019-04-06T14:43:00.370] [ERROR] application - ### error message:
+数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback... 
+### error stack:
+Error: 数据库保存数据失败：
+bom.save 回调函数中 出现异常 ：
+普通函数抛出的异常： callback...
+    at callBack (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:21:11)
+    at bom.save (C:\Users\Administrator\Desktop\Vue\koaTest\utils\bomHelper.js:72:29)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:4598:16
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\utils.js:263:16
+    at model.$__save.error (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_mongoose@5.4.22@mongoose\lib\model.js:471:7)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:315:21
+    at next (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:209:27)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:182:9
+    at process.nextTick (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_kareem@2.3.0@kareem\index.js:499:38)
+    at process._tickCallback (internal/process/next_tick.js:61:11)
+[2019-04-06T14:47:41.967] [ERROR] application - ### error message:
+accessLogger.error is not a function 
+### error stack:
+TypeError: accessLogger.error is not a function
+    at app.use (C:\Users\Administrator\Desktop\Vue\koaTest\app.js:71:18)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at allowedMethods (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:407:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at handler (C:\Users\Administrator\Desktop\Vue\koaTest\app.js:38:15)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:13
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at filter (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at views (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-views@6.2.0@koa-views\src\index.js:60:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-favicon@2.0.1@koa-favicon\index.js:39:14
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at serve (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-static@5.0.0@koa-static\index.js:53:15)
+[2019-04-06T14:48:02.869] [ERROR] application - ### error message:
+accessLogger.info is not a function 
+### error stack:
+TypeError: accessLogger.info is not a function
+    at app.use (C:\Users\Administrator\Desktop\Vue\koaTest\app.js:71:18)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at allowedMethods (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:407:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-router@7.4.0@koa-router\lib\router.js:332:32)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at handler (C:\Users\Administrator\Desktop\Vue\koaTest\app.js:38:15)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-log4@2.3.2@koa-log4\koa-logger.js:86:13
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at filter (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-json@2.0.2@koa-json\index.js:25:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at views (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-views@6.2.0@koa-views\src\index.js:60:12)
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-favicon@2.0.1@koa-favicon\index.js:39:14
+    at dispatch (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-compose@4.1.0@koa-compose\index.js:42:32)
+    at serve (C:\Users\Administrator\Desktop\Vue\koaTest\node_modules\_koa-static@5.0.0@koa-static\index.js:53:15)
+[2019-04-06T14:48:27.381] [ERROR] application - ### no find : /boms123
+[2019-04-06T14:51:07.615] [ERROR] application - ### no find : /boms123

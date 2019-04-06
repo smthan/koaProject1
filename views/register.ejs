@@ -88,7 +88,8 @@
                         });
                     },
                     doGetDb:function(){
-                        axios.post('/api/list').then(data=>{
+                        axios.post('/api/list',{page:1}).then(data=>{
+                            alert(`获取数据成功！共获取了${data.data.length}条数据！`);
                             console.log(data.data);
                         }).catch(err=>{
                             console.log(err);
